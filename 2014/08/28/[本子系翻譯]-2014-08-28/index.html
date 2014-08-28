@@ -191,6 +191,9 @@
 <h4 id="Appleman_與遊戲">Appleman 與遊戲</h4>
 <p>已知一個字符串 T ， Appleman 要構造出一個長度爲 N 的字符串 S ，初始他有一個空字符串。<br>Appleman 每次操作可以在這個字符串的末端加入 T 的一個子串 。<br>要求構造一個字符串 S 使得 Appleman 需要進行最多的操作次數，輸出這個次數。</p>
 <p>1 ≤ N ≤ 10^18<br>1 ≤ |T| ≤ 100000</p>
+<h4 id="年輪蛋糕-1">年輪蛋糕</h4>
+<p>這道題非常顯然可以用二分答案法來解決。<br>十分顯然的事情是，驗證答案是否大於 K 是很容易的。我們首先枚舉一個點把這個環斷開。<br>斷開之後對於一條鏈顯然是可以貪心驗證的。<br>那麼我們發現，我們枚舉斷點的時候，隨着斷點的向後推移，切的三刀都會往後推移，維護這三個位置即可。<br>時間複雜度 O(nlogn) 。</p>
+<p>解答例： <a href="https://gist.github.com/Saigyouji/1f2a372956506f2b4501" target="_blank" rel="external">https://gist.github.com/Saigyouji/1f2a372956506f2b4501</a></p>
 
         </section>
         <hr/>
