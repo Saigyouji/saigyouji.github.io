@@ -205,10 +205,10 @@
 <p>對於小課題 1 ，顯然可以用最短路來解決。<br>對於每一棵樹的每一個高度建一個點，再用 Dijkstra 演算法解決，可以解決小課題 1 。<br>時間複雜度 O(N(H+M)log(NH)) 。</p>
 <p>對於小課題 2 ，我們注意到我們不需關心高度，每次只要爬 cost(u, v) 高度再飛躍過去就可以，所以也規約到了最短路問題。<br>時間複雜度 O((N+M)logN) 。</p>
 <p>這道題的滿點解法就是把小課題 2 的解法推廣到一般情況。<br>我們首先發現可以把 h-t 非負的約束轉化為 Hu-t 非負的約束( u 是當前所在的樹)，這樣我們就發現我們不需要考慮高度的問題了。<br>也就是說，我們的飛躍其實可以看做是下降了一段距離后再爬上來。<br>假設我們飛躍到了 N 號樹，我們在 h 的高度，那麼答案就是 (X-h)+(HN-h) 。<br>同樣用 Dijkstra 演算法解決，時間複雜度 O((N+M)logN) 。</p>
-<p>解答例：<a href="https://www.dropbox.com/s/gesfh30zkecedqs/2014-ho-t4.cpp?dl=0" target="_blank" rel="external">https://www.dropbox.com/s/gesfh30zkecedqs/2014-ho-t4.cpp?dl=0</a></p>
+<p>解答例：<a href="https://gist.github.com/Saigyouji/a56b1e8aa9ef002ed4c8" target="_blank" rel="external">https://gist.github.com/Saigyouji/a56b1e8aa9ef002ed4c8</a></p>
 <h4 id="哈希解法">哈希解法</h4>
 <p>我們可以發現，它只需要求一種哈希值的結果。<br>正解使用了雙向搜索法。<br>我們可以發現，我們只需要知道前一半字符串的哈希值，就可以得出后一半字符串的哈希值。<br>而這一過程的時間複雜度是 O(1) 的。<br>當然還涉及到了求逆元。<br>因為具體實現搜索的時候，前一半很好搜索，對於後一半我們可以從后往前搜索，也就是倒退回去，這當然就要用到逆元了。</p>
-<p>解答例：<a href="https://www.dropbox.com/s/ol49masdejyvedx/hash.cpp?dl=0" target="_blank" rel="external">https://www.dropbox.com/s/ol49masdejyvedx/hash.cpp?dl=0</a></p>
+<p>解答例：<a href="https://gist.github.com/Saigyouji/4490e61ca3214385af4d" target="_blank" rel="external">https://gist.github.com/Saigyouji/4490e61ca3214385af4d</a></p>
 
         </section>
         <hr/>
