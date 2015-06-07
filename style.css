@@ -1,9 +1,7 @@
 .FSTitle {
 	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	
-	position: relative;
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 .FSTitle h1 {
@@ -15,6 +13,9 @@
 .FArticle {
 	margin-left: 25%;
 	margin-right: 25%;
+	
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
 .FATitle {}
