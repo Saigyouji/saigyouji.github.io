@@ -1,0 +1,43 @@
+.FSTitle {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+	position: relative;
+}
+
+.FSTitle h1 {
+	font-family: "FZFSJW--GB1-0", "STFangsong", "FangSong", "FangSong_GB2312";
+	font-size: 140%;
+	font-weight: bold;
+}
+
+.FArticle {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.FATitle {}
+
+.FATitle h1 {
+	font-family: "FZKTJW--GB1-0", "STKaiti", "KaiTi", "KaiTi_GB2312";
+	font-size: 130%;
+}
+
+.FAContent {
+	font-family: "FZSYJW--GB1-0", "STSong", "SimSun";
+	font-size: 100%;
+	
+	line-height: 150%;
+	
+	margin-left: 30px;
+}
+
+.FAContent p {
+	text-indent: 1cm;
+}
+
+.FAContent h2 {
+	font-weight: bold;
+	font-size: 120%;
+}
